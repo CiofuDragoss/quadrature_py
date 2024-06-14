@@ -1,5 +1,5 @@
 # quadrature_py
-A Gui with 10 quadrature methods for R and R**2
+A Gui with 11 quadrature methods for R and R**2
 
 @ciofu_dragos_ioan author
 Informatii program-aproximare cu metode 
