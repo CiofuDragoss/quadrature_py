@@ -1,9 +1,7 @@
 # quadratura.py  
 Autor: Dragos Ioan Ciofu  
 
-Descriere: Aplicație GUI pentru aproximarea integralei R->R  
-- Permite 2-3 metode de cuadratură  
-- Include opțiuni de animație, plotare, export MAPPING și salvare rezultate  
+
 
 Descriere: Aplicatie GUI pentru aproximarea integralei pe R si R^2, care ofera 11 metode de cuadratura (8 pentru o variabila, 3 pentru doua variabile). Include optiuni de animatie, plotare, export MP4/PNG si salvare rezultate in CSV/TXT.
 
@@ -18,40 +16,34 @@ Structura proiectului
 - **plotting_anim.py**  
   Clase pentru animatie (Trapez, Simpson, Dreptunghi) si plotare grafice 2D/3D
 
-Functionalitati principale
-
-- Detectarea automata a functiei pe R (o variabila) sau R^2 (doua variabile)
-
 Parametri input:
 
 - **R:** interval a,b; numar subdiviziuni sau eroare dorita
 - **R^2:** interval a,b,c,d; n,m (sau un singur numar pentru ambele axe); eroare dorita
-
-Selectie dintre cele 11 metode de cuadratura
-
-Optiuni suplimentare:
+- metoda dorita (din cele 11)
 - animatie (daca e disponibila)
 - plotare
 - eroare absoluta si maxima
-- rezultat SciPy
 - timp executie
+- 
+Functionalitati principale
 
-Export rezultat:
-- afisare in GUI
+- Detectarea automata a functiei pe R (o variabila) sau R^2 (doua variabile)
 - salvare CSV/TXT
-- export imagine PNG sau video MP4 (necesita SA AVETI FFMPEG)
+- plotare/animare
+- export imagine PNG sau video MP4 (necesita FFMPEG)
 
-Gestionarea erorilor
+Gestionarea erorilor:
 
 - Verifica compatibilitatea functiei cu metoda selectata
 - Afiseaza mesaje clare in ferestre pop‑up
-- Nu blocheaza aplicatia in caz de eroare; rezultatul este NaN acolo unde nu se poate calcula
+- Nu blocheaza aplicatia in caz de eroare; rezultatul este NaN acolo unde nu se poate calcula ex csv.
 
 Aspecte GUI
 
-- Stil consistent inspirat din tema CSV
-- Butoanele “Incarca CSV/TXT” se blocheaza dupa incarcare pana la rezolvare
-- Checkbox‑urile pentru animatie si plotare sunt inactive pentru metode fara animatie
+- Stil consistent,folosirea de stiluri css.
+- Butoanele “Incarca CSV/TXT” se blocheaza dupa incarcare pana la rezolvare.
+- Checkbox‑urile pentru animatie si plotare sunt inactive pentru metode fara animatie.
 - Butonul GHID afiseaza instructiuni detaliate
 
 Proces rezolvare fisiere CSV/TXT
